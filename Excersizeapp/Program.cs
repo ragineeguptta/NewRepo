@@ -6,21 +6,35 @@ namespace Excersizeapp
     {
         static void Main(string[] args)
         {
-            string myString = "15";
-            string mySecondString = "13";
-            int num1 = Int32.Parse(myString);
-            int num2 = Int32.Parse(mySecondString);
-            int result = num1 + num2;
+           //define few variables
+           int age = 24;
+           string name = "Raginee";
 
-            string stringForFloat = "0.85"; // datatype should be float
-            string stringForInt = "12345"; // datatype should be int
+           // 1. string concatenation 
+           Console.WriteLine("String Concatenation");
+           Console.WriteLine("Hello, my name is " + name + ", I am " + age + " years old");
 
-            int i = Int32.Parse(stringForInt);
-            float f = float.Parse(stringForFloat);
+            // 2. String formatting.
+            //string formatting uses index
+            Console.WriteLine("String Formating");
+            Console.WriteLine("Hello, my name is {0}, I am {1} years old", name, age);
 
-            System.Console.WriteLine("Int = {0}, Float = {1}", i, f);
-            Console.WriteLine(result);
-            Console.Read();
+            // 3. String interpolation.
+            //string interpolation uses $ at the start which will allow us to write our
+            //variables like this {variableName}
+            Console.WriteLine("String interpolation.");
+            Console.WriteLine($"Hello my name is {name}, I am {age} years old");
+          
+            //4. Verbatim strings.
+            //verbatim start with @ and tells the compiler to take the string
+            //literally  and ignore any spaces and escape characters like \n
+            Console.WriteLine("Varbatim String");
+            Console.WriteLine(@"my name is
+raginee            gupta
+
+hello
+");
+            Console.ReadLine();
         }
     }
 }
