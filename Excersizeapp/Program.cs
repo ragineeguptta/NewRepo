@@ -6,14 +6,23 @@ namespace Excersizeapp
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.BackgroundColor = ConsoleColor.Red;
-            Console.Clear();
-            string name = "Raginee";
-            string message = "My name is  " + name;
-            string capsMessage = message.ToUpper();
-            Console.WriteLine(capsMessage);
+            //implicit conversion
+            int num = 123456633;
+            long bignum = num;
 
+            float myFloat = 13.37f;
+            double myNewDouble = myFloat;
+
+            double d1 = 13.37;
+            int myInt;
+            //explicit conversion
+            myInt = (int)d1;
+
+
+            //typeConversion
+            string myString = myNewDouble.ToString();
+
+            Console.WriteLine(myInt);
             Console.Read();
         }
     }
