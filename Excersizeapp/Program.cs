@@ -6,23 +6,20 @@ namespace Excersizeapp
     {
         static void Main(string[] args)
         {
-            //implicit conversion
-            int num = 123456633;
-            long bignum = num;
+            string myString = "15";
+            string mySecondString = "13";
+            int num1 = Int32.Parse(myString);
+            int num2 = Int32.Parse(mySecondString);
+            int result = num1 + num2;
 
-            float myFloat = 13.37f;
-            double myNewDouble = myFloat;
+            string stringForFloat = "0.85"; // datatype should be float
+            string stringForInt = "12345"; // datatype should be int
 
-            double d1 = 13.37;
-            int myInt;
-            //explicit conversion
-            myInt = (int)d1;
+            int i = Int32.Parse(stringForInt);
+            float f = float.Parse(stringForFloat);
 
-
-            //typeConversion
-            string myString = myNewDouble.ToString();
-
-            Console.WriteLine(myInt);
+            System.Console.WriteLine("Int = {0}, Float = {1}", i, f);
+            Console.WriteLine(result);
             Console.Read();
         }
     }
