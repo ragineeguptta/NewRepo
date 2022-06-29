@@ -6,35 +6,19 @@ namespace Excersizeapp
     {
         static void Main(string[] args)
         {
-           //define few variables
-           int age = 24;
-           string name = "Raginee";
+            string myName;
+            Console.WriteLine("Please enter your name and press enter");
+            myName = Console.ReadLine();
+            string myNameUppercase = String.Format("Upper case : {0}", myName.ToUpper());
+            string myNameLowercase = String.Format("Lower case : {0}", myName.ToLower());
+            string myNameTrimmed = String.Format("Trimmed value : {0}", myName.Trim());
+            string myNameSubString = String.Format("Suvstring value : {0}", myName.Substring(0, 5));
+            Console.WriteLine(myNameUppercase);
+            Console.WriteLine(myNameLowercase);
+            Console.WriteLine(myNameTrimmed);
+            Console.WriteLine(myNameSubString);
 
-           // 1. string concatenation 
-           Console.WriteLine("String Concatenation");
-           Console.WriteLine("Hello, my name is " + name + ", I am " + age + " years old");
-
-            // 2. String formatting.
-            //string formatting uses index
-            Console.WriteLine("String Formating");
-            Console.WriteLine("Hello, my name is {0}, I am {1} years old", name, age);
-
-            // 3. String interpolation.
-            //string interpolation uses $ at the start which will allow us to write our
-            //variables like this {variableName}
-            Console.WriteLine("String interpolation.");
-            Console.WriteLine($"Hello my name is {name}, I am {age} years old");
-          
-            //4. Verbatim strings.
-            //verbatim start with @ and tells the compiler to take the string
-            //literally  and ignore any spaces and escape characters like \n
-            Console.WriteLine("Varbatim String");
-            Console.WriteLine(@"my name is
-raginee            gupta
-
-hello
-");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
