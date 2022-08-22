@@ -6,33 +6,24 @@ namespace HelloWorldd
     {
         static void Main(string[] args)
         {
-            //WriteSomething();
-            //WriteSomethingSpecific("I am an argument and called from a method");
-            //Console.Read();
-            Console.WriteLine(Add(Add(1, 2), Add(3, 4)));
-            Console.WriteLine(Add(10, 20));
-            Console.WriteLine(Multiply(25, 13));
+            string friend1 = "Raginee";
+            string friend2 = "Gunjan";
+            string friend3 = "Shashikala";
+
+            //GreetFriend(friend1);
+            //GreetFriend(friend2);
+            //GreetFriend(friend3);
+            GreetFriend(friend1, friend2, friend3);
             Console.Read();
         }
 
-        ////accessmodifier, (static), retun type, method name (parameter1)
-        //public static void WriteSomething()
-        //{
-        //    Console.WriteLine("I am called by method");
-        //}
-
-        //public static void WriteSomethingSpecific(string myText)
-        //{
-        //    Console.WriteLine(myText);
-        //}
-
-        public static int Add(int num1, int num2)
+        
+        public static void GreetFriend(string friendName, string friend2, string friend3)
         {
-            return num1 + num2;
-        }
-        public static double Multiply(double num1, double num2)
-        {
-            return num1 / num2;
+            //Console.WriteLine("Hi " + friendName + ", my friend!");
+            Console.WriteLine("Hi " + friendName + ", my friend!");
+            Console.WriteLine("Hi " + friend2 + ", my friend!");
+            Console.WriteLine("Hi " + friend3 + ", my friend!");
         }
     }
 }
