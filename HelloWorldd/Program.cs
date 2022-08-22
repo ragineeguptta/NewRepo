@@ -6,24 +6,25 @@ namespace HelloWorldd
     {
         static void Main(string[] args)
         {
-            string friend1 = "Raginee";
-            string friend2 = "Gunjan";
-            string friend3 = "Shashikala";
-
-            //GreetFriend(friend1);
-            //GreetFriend(friend2);
-            //GreetFriend(friend3);
-            GreetFriend(friend1, friend2, friend3);
+            Calculate();
             Console.Read();
         }
 
-        
-        public static void GreetFriend(string friendName, string friend2, string friend3)
+        public static void Calculate()
         {
-            //Console.WriteLine("Hi " + friendName + ", my friend!");
-            Console.WriteLine("Hi " + friendName + ", my friend!");
-            Console.WriteLine("Hi " + friend2 + ", my friend!");
-            Console.WriteLine("Hi " + friend3 + ", my friend!");
+            Console.WriteLine("Please inter the first number");
+            string number1Input = Console.ReadLine();
+            Console.WriteLine("Please inter second number");
+            string number2Input = Console.ReadLine();
+
+            int num1 = int.Parse(number1Input);
+            int num2 = int.Parse(number2Input);
+
+            int result = num1 + num2;
+
+
+            Console.WriteLine(result);
         }
+        
     }
 }
