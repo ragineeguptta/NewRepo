@@ -6,19 +6,60 @@ namespace MakingDecision
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What's the temperature like?");
-            string temperature = Console.ReadLine();
-            int numTemp;
-            int number;
-            if(int.TryParse(temperature, out number))
+            string regiName = "";
+            string regiPass = "";
+            string logName = "";
+            string logPass = "";
+
+            Console.WriteLine("Please enter your Register Name");
+            regiName = Console.ReadLine();
+            Console.WriteLine("Please enter your Register Password");
+            regiPass = Console.ReadLine();
+
+            Console.WriteLine("Please enter your Login Name");
+            logName = Console.ReadLine();
+            Console.WriteLine("Please enter your Login Password");
+            logPass = Console.ReadLine();
+
+            if (regiName == logName)
             {
-                numTemp = number;
+                Console.WriteLine("Congratulation you loged in.");
             }
             else
             {
-                numTemp = 0;
-                Console.WriteLine("Value entered, was no number. 0 set as temperature.");
+                Console.WriteLine("Incorrect username and password.");
             }
+
+            //bool isAdmin = false;
+            //bool isRegistered = true;
+            //string userName = "";
+            //Console.WriteLine("Please enter your userName");
+
+            //userName = Console.ReadLine();
+            //if (isRegistered && userName != "" && userName.Equals("admin"))
+            //{
+            //    Console.WriteLine("Hey there, " + userName);
+            //}
+
+            //if(isAdmin || isRegistered)
+            //{
+            //    Console.WriteLine("you are logged in");
+            //}
+            Console.Read();
+
+            //Console.WriteLine("What's the temperature like?");
+            //string temperature = Console.ReadLine();
+            //int numTemp;
+            //int number;
+            //if(int.TryParse(temperature, out number))
+            //{
+            //    numTemp = number;
+            //}
+            //else
+            //{
+            //    numTemp = 0;
+            //    Console.WriteLine("Value entered, was no number. 0 set as temperature.");
+            //}
 
             //string numberAsString = "128";
             //float parsedValue;
@@ -73,7 +114,6 @@ namespace MakingDecision
             //    Console.WriteLine("Short are enough today");
             //}
 
-            Console.Read();
         }
     }
 }
