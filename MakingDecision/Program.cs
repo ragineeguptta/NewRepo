@@ -4,76 +4,50 @@ namespace MakingDecision
 {
     class Program
     {
-        static void Main(string[] args)
+        static int highscore = 300;
+        static string highplayerName = "Raginee";
+        static void Main2(string[] args)
         {
-            Console.WriteLine("What's the temperature like?");
-            string temperature = Console.ReadLine();
-            int numTemp;
-            int number;
-            if(int.TryParse(temperature, out number))
+            CheckHighScore(250, "aa");
+            CheckHighScore(350, "bb");
+            CheckHighScore(330, "cc");
+
+            Console.Read();
+
+            ////Switch Statement
+
+            //int age = 79;
+
+            //switch (age)
+            //{
+            //    case 15:
+            //        Console.WriteLine("Too young");
+            //        break;
+            //    case 25:
+            //        Console.WriteLine("Good to go");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Too old");
+            //        break;
+
+            //}
+            //Console.Read();
+        }
+        public static void CheckHighScore(int score, string playerName)
+        {
+            if(score > highscore)
             {
-                numTemp = number;
+                highscore = score;
+                highplayerName = playerName;
+
+                Console.WriteLine("New highscore is " + score);
+                Console.WriteLine("It is now held by " + playerName);
             }
             else
             {
-                numTemp = 0;
-                Console.WriteLine("Value entered, was no number. 0 set as temperature.");
+
+                Console.WriteLine("The old highscore could not be broken. It is still " + highscore + " and held by " + highplayerName);
             }
-
-            //string numberAsString = "128";
-            //float parsedValue;
-
-            //bool success = float.TryParse(numberAsString, out parsedValue);
-
-            //if (success)
-            //{
-            //    Console.WriteLine("Parsing successful - number is " + parsedValue);
-            //}
-
-            //else
-            //{
-            //    Console.WriteLine("Parsing failed");
-            //}
-
-
-            //int temperature = 10;
-
-            //if (temperature < 10)
-            //{
-            //    Console.WriteLine("Take the coat");
-            //}
-
-            //if (temperature == 10)
-            //{
-            //    Console.WriteLine("The temp is 10 degree");
-            //}
-            //if (temperature > 10)
-            //{
-            //    Console.WriteLine("Cozy and Warm");
-            //}
-
-
-
-            //Console.WriteLine("What's the temperature like?");
-            //string temperature = Console.ReadLine();
-            //int numTemp = int.Parse(temperature);
-
-            //if(numTemp < 20)
-            //{
-            //    Console.WriteLine("Take the Coat");
-            //}
-
-            //else if (numTemp == 20)
-            //{
-            //    Console.WriteLine("Pants and Pull Over should be fine");
-            //}
-
-            //else
-            //{
-            //    Console.WriteLine("Short are enough today");
-            //}
-
-            Console.Read();
         }
     }
 }
