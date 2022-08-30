@@ -7,7 +7,7 @@ namespace MakingDecision
     class StateOfMattter
     {
         // Inhenchment of if statement - ternary- oprator
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             int temp = -5;
             string stateOfMatter;
