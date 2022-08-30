@@ -6,7 +6,7 @@ namespace MakingDecision
     {
         static int highscore = 300;
         static string highplayerName = "Raginee";
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             CheckHighScore(250, "aa");
             CheckHighScore(350, "bb");
