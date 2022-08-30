@@ -4,31 +4,13 @@ namespace MakingDecision
 {
     class Program
     {
+        static string username;
+        static string password;
         static void Main(string[] args)
         {
-            string regiName = "";
-            string regiPass = "";
-            string logName = "";
-            string logPass = "";
-
-            Console.WriteLine("Please enter your Register Name");
-            regiName = Console.ReadLine();
-            Console.WriteLine("Please enter your Register Password");
-            regiPass = Console.ReadLine();
-
-            Console.WriteLine("Please enter your Login Name");
-            logName = Console.ReadLine();
-            Console.WriteLine("Please enter your Login Password");
-            logPass = Console.ReadLine();
-
-            if (regiName == logName)
-            {
-                Console.WriteLine("Congratulation you loged in.");
-            }
-            else
-            {
-                Console.WriteLine("Incorrect username and password.");
-            }
+            Register();
+            Login();
+            Console.Read();
 
             //bool isAdmin = false;
             //bool isRegistered = true;
@@ -114,6 +96,38 @@ namespace MakingDecision
             //    Console.WriteLine("Short are enough today");
             //}
 
+        }
+        public static void Register()
+        {
+            Console.WriteLine("Please enter your username");
+            username = Console.ReadLine();
+            Console.WriteLine("Please enter your password");
+            password = Console.ReadLine();
+            Console.WriteLine("Registration Completed");
+            Console.WriteLine("--------------------------------------------------");
+
+        }
+
+        public static void Login()
+        {
+            Console.WriteLine("Please enter your username");
+            if(username == Console.ReadLine())
+            {
+                Console.WriteLine("Please enter your password");
+                if (password == Console.ReadLine())
+                {
+                    Console.WriteLine("Login Succesfull");
+                }
+                else
+                {
+                    Console.WriteLine("Login failed, wrong passward. Restart program");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Login failed, wrong username. Restart program");
+            }
         }
     }
 }
