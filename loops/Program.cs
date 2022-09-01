@@ -4,7 +4,7 @@ namespace loops
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             //// for loop
             //for(int counter = 1; counter < 20; counter += 2)
