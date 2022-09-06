@@ -8,10 +8,48 @@ namespace opps1
     {
         //member variable
         private int lenght = 3;
-        public int height;
-        public int width;
-        public int volume;
+        private int height;
+       // public int width;
+        private int volume;
 
+
+        public int Width { get; set; }
+
+        public int Volume
+        {
+            get
+            {
+                return this.lenght * this.height * this.Width;
+            }
+        }
+
+        public Box(int length, int height, int width)
+        {
+            this.lenght = length;
+            this.height = height;
+            Width = width;
+
+        }
+
+
+        public int Height
+        {
+            get
+            {
+                return height;
+            }
+            set
+            {
+                if(value < 0)
+                {
+                    height = -value;
+                }
+                else
+                {
+                    height = value;
+                }
+            }
+        }
 
         public void SetLength(int lenght)
         {
@@ -25,13 +63,13 @@ namespace opps1
 
         public int GetVolumn()
         {
-            return this.lenght*this.height*this.width;
+            return this.lenght*this.height*this.Width;
         }
 
 
         public void DisplayInfo()
         {
-            Console.WriteLine("Length is {0} and height is {1} and width is {2} so volumn is {3}", lenght, height, width, volume = lenght*height*width);
+            Console.WriteLine("Length is {0} and height is {1} and width is {2} so volumn is {3}", lenght, height, Width, volume = lenght*height*Width);
         }
 
     }
