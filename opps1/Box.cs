@@ -67,6 +67,11 @@ namespace opps1
         }
 
 
+        public int FrontSurface
+        {
+            get { return height * lenght; }
+        }
+
         public void DisplayInfo()
         {
             Console.WriteLine("Length is {0} and height is {1} and width is {2} so volumn is {3}", lenght, height, Width, volume = lenght*height*Width);

@@ -14,6 +14,8 @@ namespace opps1
 
             Console.WriteLine("Box lenght is " + box.GetLenght());
 
+            Console.WriteLine("Front Surface of the box is {0} ", box.FrontSurface);
+
             Console.WriteLine("Box volumn is " + box.Volume);
             Console.WriteLine("Box volumn is " + box.GetVolumn());
             box.DisplayInfo();
