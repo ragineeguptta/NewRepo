@@ -6,7 +6,7 @@ namespace _7_Array
 {
     class JaggedArray
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             // Declare Jagged Array
             int[][] jaggedArray = new int[3][];
