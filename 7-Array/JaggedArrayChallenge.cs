@@ -6,7 +6,7 @@ namespace _7_Array
 {
     class JaggedArrayChallenge
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             string[] joesFamily = new string[] { "Martha", "Robert" };
 
