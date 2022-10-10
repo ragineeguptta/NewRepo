@@ -52,7 +52,7 @@ namespace _7_Array
         //}
 
 
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             for (int i = 0, j = 2; i < matrix.GetLength(0); i++, j--)
             {
