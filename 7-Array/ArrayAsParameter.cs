@@ -6,7 +6,7 @@ namespace _7_Array
 {
     class ArrayAsParameter
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int[] studentsGrades = new int[] { 12, 32, 4, 1, 3, 12, 23 };
             double averageResult = GetAverage(studentsGrades);
