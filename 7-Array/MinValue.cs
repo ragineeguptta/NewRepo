@@ -6,7 +6,7 @@ namespace _7_Array
 {
     class MinValue
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int min = minV(6, 5, 3, 0, -4, 8);
 
