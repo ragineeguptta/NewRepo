@@ -35,6 +35,18 @@ namespace _7_Array
                 employeesDirectory.Add(emp.Role, emp);
             }
 
+            string KeyToUpdate = "HR";
+            if (employeesDirectory.ContainsKey(KeyToUpdate))
+            {
+                employeesDirectory[KeyToUpdate] = new Employee("HR", "Eleka", 26, 18);
+                Console.WriteLine("Employee with Role/Key {0} was updated!.", KeyToUpdate);
+            }
+            else
+            {
+                Console.WriteLine("No Employee found with th Role/Key {0} was updated!.", KeyToUpdate);
+            }
+
+
             for (int i = 0; i < employeesDirectory.Count; i++)
             {
                 //using ElementAt(i) to return  the key-value pair stored at index i
