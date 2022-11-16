@@ -6,7 +6,7 @@ namespace _7_Array
 {
     class Stacks
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             // defining a new stack
             Stack<int> stack = new Stack<int>();
