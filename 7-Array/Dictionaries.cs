@@ -9,7 +9,7 @@ namespace _7_Array
     {
         //key - value
         // Auto - car
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             Employee[] employees =
             {
