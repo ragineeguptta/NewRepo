@@ -9,7 +9,7 @@ namespace _7_Array
     {
         //key - value
         // Auto - car
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             Employee[] employees =
             {
@@ -35,6 +35,8 @@ namespace _7_Array
                 employeesDirectory.Add(emp.Role, emp);
             }
 
+
+            //Update
             string KeyToUpdate = "HR";
             if (employeesDirectory.ContainsKey(KeyToUpdate))
             {
@@ -44,6 +46,18 @@ namespace _7_Array
             else
             {
                 Console.WriteLine("No Employee found with th Role/Key {0} was updated!.", KeyToUpdate);
+            }
+
+
+            // Remove
+            string KeyToRemove = "Intern";
+            if (employeesDirectory.Remove(KeyToRemove))
+            {
+                Console.WriteLine("Employee with Role/Key {0} was Removed!.", KeyToRemove);
+            }
+            else
+            {
+                Console.WriteLine("No Employee found with th Role/Key {0} was updated!.", KeyToRemove);
             }
 
 
