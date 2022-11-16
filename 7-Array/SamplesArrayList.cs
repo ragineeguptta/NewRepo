@@ -7,7 +7,7 @@ namespace _7_Array
 {
     class SamplesArrayList
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             // declaring an ArrayList with undefined amount of object
             ArrayList myArrayList = new ArrayList();
