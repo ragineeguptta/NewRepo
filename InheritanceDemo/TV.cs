@@ -4,6 +4,7 @@ using System.Text;
 
 namespace InheritanceDemo
 {
+   // child
     class TV : ElectricalDevice
     {
         
