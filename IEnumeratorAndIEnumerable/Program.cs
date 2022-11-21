@@ -24,7 +24,7 @@ namespace IEnumeratorAndIEnumerable
         ///you need the results right away and are possibly mutating / editing the objects later on.
         ///In this case, it is better to use an array or a list
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             DogShelter shelter = new DogShelter();
             foreach (Dog dog in shelter)
