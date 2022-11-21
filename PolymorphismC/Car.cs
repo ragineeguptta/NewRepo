@@ -14,7 +14,10 @@ namespace PolymorphismC
             this.HP = hp;
             this.Color = color;
         }
+        public Car()
+        {
 
+        }
         public void ShowDetails()
         {
             Console.WriteLine("HP: "+ HP + " Color:" + Color);
