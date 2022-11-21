@@ -6,7 +6,7 @@ namespace IEnumeratorAndIEnumerable
 {
     class IEnumerableExample1
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             //creating a genric IEnumerable variable that takes any collection of type int
             //we will use this variable to store the collections that will get returned by the GetCollection/90 method
