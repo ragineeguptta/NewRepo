@@ -8,7 +8,7 @@ namespace RegularExpression
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            string pattern = @"\d{5}";
+            string pattern = @"\d";
             Regex regex = new Regex(pattern);
 
             string text = "Hi there, my number is 12314";
