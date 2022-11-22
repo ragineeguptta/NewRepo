@@ -27,7 +27,7 @@ namespace StructsC
     }
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Game game1;
             game1.name = "Pokemon Go";
