@@ -6,7 +6,7 @@ namespace StructsC
 {
     class MathE
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("Celling: " + Math.Ceiling(15.3));
             Console.WriteLine("FLOOR: " + Math.Floor(15.3));
