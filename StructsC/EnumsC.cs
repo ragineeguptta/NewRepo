@@ -8,7 +8,7 @@ namespace StructsC
     {
         enum Day { Mo, Tu, We, Th, Fr, Sa, Su};
         enum Month { January = 1, February, March, April, May, June, July = 12, August, September, October, November, December };
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Day fr = Day.Fr;
             Day su = Day.Su;
