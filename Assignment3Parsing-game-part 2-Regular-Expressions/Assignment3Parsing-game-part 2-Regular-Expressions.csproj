@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Assignment3Parsing_game_part_2_Regular_Expressions</RootNamespace>
+  </PropertyGroup>
+
+</Project>
