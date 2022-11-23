@@ -4,7 +4,7 @@ namespace DateTimeT
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             DateTime dateTime = new DateTime(1998, 2, 19);
             Console.WriteLine("My birthday is " + dateTime);
