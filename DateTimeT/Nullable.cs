@@ -6,7 +6,7 @@ namespace DateTimeT
 {
     class Nullable
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int? num1 = null;
             int? num2 = 4938;
