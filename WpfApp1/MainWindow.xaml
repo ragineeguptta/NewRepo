@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="525">
     <!--Extensible Application Markup Language (XAML)-->
     <!--<Grid>
         --><!--<Button Content="Click Me" Height="50" Width="150" FontSize="32"></Button>
@@ -27,4 +27,13 @@
             </Button.Content>
         </Button>--><!--
     </Grid>-->
+    <StackPanel>
+        <TextBox HorizontalAlignment="Center" Margin="20">Hello World</TextBox>
+        <ListBox Height="100" Width="100">
+            <ListBoxItem Content="Item1"></ListBoxItem>
+            <ListBoxItem Content="Item2"></ListBoxItem>
+            <ListBoxItem Content="Item3"></ListBoxItem>
+        </ListBox>
+        <Button Content="Click Me" Click="Button_Click" Margin="20"></Button>
+    </StackPanel>
 </Window>
