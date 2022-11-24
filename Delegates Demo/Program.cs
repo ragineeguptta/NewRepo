@@ -36,6 +36,22 @@ namespace Delegates_Demo
             {
                 return true;
             });
+
+            //statement lamda 
+            string searchKeyword = "A";
+            DisplayPeople("age > 20 with search keyword:" + searchKeyword, people, (p) =>
+              {
+                  if (p.Name.Contains(searchKeyword) && p.Age > 20)
+                  {
+                      return true;
+                  }
+                  else
+                  {
+                      return false;
+                  }
+              });
+            // expression lamda
+            DisplayPeople("exactly 25:", people, p => p.Age == 25);
         }
 
         //a method to display the lit of people that passes the filter condition
