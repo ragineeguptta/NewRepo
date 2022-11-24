@@ -23,6 +23,19 @@ namespace Delegates_Demo
             DisplayPeople("Adult", people, IsAdult);
             DisplayPeople("Senior", people, IsSenior);
 
+
+            //Ananomas method
+            FilterDelegate filter = delegate (Person p)
+            {
+                return p.Age >= 20 && p.Age <= 30;
+            };
+            DisplayPeople("Between 20 and 30:", people, filter);
+
+            //Another Ananomas method
+            DisplayPeople("All: ", people, delegate (Person p)
+            {
+                return true;
+            });
         }
 
         //a method to display the lit of people that passes the filter condition
